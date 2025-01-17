@@ -28,4 +28,14 @@ export const projects: Projects[] = [
     technologies: ["React", "TypeScript", "Styled Components"],
     live: "https://www.wlabadi.com/",
   },
+  {
+    title: "Green-site",
+    description:
+      "This project was created to practice semantic HTML tags and ARIA attributes, aiming to improve web accessibility. The application is a simple framework for an eco-themed website, focusing on implementing best practices for writing accessible and semantic code.",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    technologies: ["React", "TypeScript", "CSS"],
+    live: "https://www.wlabadi.com/",
+    github: "https://github.com/TomaszBielicki/green-site/tree/main",
+  },
 ];
