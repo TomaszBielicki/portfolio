@@ -1,14 +1,13 @@
-import React from "react";
 import { Paper, Box, Typography, LinearProgress } from "@mui/material";
 import { motion } from "framer-motion";
 
 interface SkillCardProps {
   icon: string;
   name: string;
-  level: number;
+  category: string;
 }
 
-export const SkillCard = ({ icon, name, level }: SkillCardProps) => {
+export const SkillCard = ({ icon, name, category }: SkillCardProps) => {
   return (
     <Paper
       component={motion.div}
@@ -20,7 +19,15 @@ export const SkillCard = ({ icon, name, level }: SkillCardProps) => {
         transition: "all 0.2s",
       }}
     >
-      <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: 2,
+          mb: 2,
+          height: 40,
+        }}
+      >
         <Typography variant="h4" component="span">
           {icon}
         </Typography>
@@ -29,15 +36,12 @@ export const SkillCard = ({ icon, name, level }: SkillCardProps) => {
       <Box sx={{ width: "100%" }}>
         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1 }}>
           <Typography variant="body2" color="text.secondary">
-            Proficiency
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {level}%
+            {category}
           </Typography>
         </Box>
         <LinearProgress
           variant="determinate"
-          value={level}
+          value={100}
           sx={{
             height: 6,
             borderRadius: 3,
