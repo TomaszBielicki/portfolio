@@ -1,19 +1,18 @@
-import React from 'react';
-import { Box, Typography, Button, Container } from '@mui/material';
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
-import { HeroIcon } from './HeroIcon';
+import React from "react";
+import { Box, Typography, Button, Container } from "@mui/material";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { HeroIcon } from "./HeroIcon";
 
 export const Hero = () => {
   return (
     <Container>
       <Box
         sx={{
-          minHeight: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 8,
-          pt: 8,
+          minHeight: { md: "100vh" },
+          display: "flex",
+          alignItems: "center",
+          pt: { xs: 20, sm: 20 },
         }}
       >
         <Box
@@ -23,26 +22,38 @@ export const Hero = () => {
           transition={{ duration: 0.8 }}
           sx={{
             flex: 1,
-            display: 'flex',
-            flexDirection: 'column',
+            display: "flex",
+            flexDirection: "column",
             gap: 4,
           }}
         >
           <Typography
             variant="h1"
             component={motion.h1}
-            sx={{ 
-              background: 'linear-gradient(45deg, #6366f1 30%, #22d3ee 90%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+            sx={{
+              background: "linear-gradient(45deg, #6366f1 30%, #22d3ee 90%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
           >
             React Developer
           </Typography>
-          <Typography variant="h4" color="text.secondary" sx={{ maxWidth: '600px' }}>
-            Building beautiful and performant web applications with modern technologies.
+          <Typography
+            variant="h4"
+            color="text.secondary"
+            sx={{ maxWidth: "600px", fontSize: { xs: "20px", sm: "20px" } }}
+          >
+            Building beautiful and performant web applications with modern
+            technologies.
           </Typography>
-          <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 2,
+              mt: 2,
+              flexDirection: { xs: "column", sm: "row" },
+            }}
+          >
             <Button
               variant="contained"
               size="large"
@@ -76,7 +87,11 @@ export const Hero = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          sx={{ flex: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}
+          sx={{
+            flex: 1,
+            display: { xs: "none", md: "flex" },
+            justifyContent: "center",
+          }}
         >
           <HeroIcon />
         </Box>
