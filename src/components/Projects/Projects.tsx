@@ -14,7 +14,7 @@ import { projects } from "./projectsData";
 
 export const Projects = () => {
   return (
-    <Box component="section" sx={{ py: 8, mx: 12 }}>
+    <Box component="section" sx={{ py: 8, mx: { xs: 2, sm: 6, md: 12 } }}>
       <Typography variant="h2" sx={{ mb: 4 }}>
         Projects
       </Typography>
@@ -65,9 +65,11 @@ export const Projects = () => {
                       </IconButton>
                     ) : null}
 
-                    <IconButton href={project.live} target="_blank">
-                      <ExternalLink />
-                    </IconButton>
+                    {project.live ? (
+                      <IconButton href={project.live} target="_blank">
+                        <ExternalLink />
+                      </IconButton>
+                    ) : null}
                   </Box>
                 </Box>
               </CardContent>
