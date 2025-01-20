@@ -4,5 +4,5 @@ export interface Projects {
   image: string;
   technologies: string[];
   github?: string;
-  live: string;
+  live?: string;
 }
