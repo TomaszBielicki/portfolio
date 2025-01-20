@@ -2,7 +2,7 @@ export interface Skill {
   icon: string;
   name: string;
   level: number;
-  category: 'frontend' | 'backend' | 'tools';
+  category: string;
 }
 
 export interface SlideDirection {
