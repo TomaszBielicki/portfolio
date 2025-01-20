@@ -35,7 +35,24 @@ export const projects: Projects[] = [
     image:
       "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
     technologies: ["React", "TypeScript", "CSS"],
-    live: "https://www.wlabadi.com/",
     github: "https://github.com/TomaszBielicki/green-site/tree/main",
+  },
+  {
+    title: "Firebase authorization",
+    description:
+      "This is a simple solution for user registration using an email and password. After registration, the user can log in to their account, access their profile, and change their password.",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    technologies: ["React", "React router", "JavaScript", "CSS"],
+    github: "https://github.com/TomaszBielicki/firebase-auth-react/tree/master",
+  },
+  {
+    title: "Next.js Event Project ",
+    description:
+      "A project created to practice advanced features of Next.js, including dynamic routing, server-side rendering, and static site generation. This web application is designed to showcase events in an efficient and user-friendly way.",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    technologies: ["NextJS", "JavaScript", "CSS"],
+    github: "https://github.com/TomaszBielicki/nextjs-event-project",
   },
 ];
