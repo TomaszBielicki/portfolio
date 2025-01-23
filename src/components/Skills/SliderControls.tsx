@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface SliderControlsProps {

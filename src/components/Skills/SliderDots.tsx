@@ -1,6 +1,5 @@
-import React from 'react';
-import { Box } from '@mui/material';
-import { motion } from 'framer-motion';
+import { Box } from "@mui/material";
+import { motion } from "framer-motion";
 
 interface SliderDotsProps {
   total: number;
@@ -9,7 +8,7 @@ interface SliderDotsProps {
 }
 
 export const SliderDots = ({ total, current, onSelect }: SliderDotsProps) => (
-  <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, mt: 3 }}>
+  <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mt: 3 }}>
     {Array.from({ length: total }).map((_, index) => (
       <motion.div
         key={index}
@@ -21,12 +20,13 @@ export const SliderDots = ({ total, current, onSelect }: SliderDotsProps) => (
           sx={{
             width: 8,
             height: 8,
-            borderRadius: '50%',
-            backgroundColor: current === index ? 'primary.main' : 'background.paper',
-            cursor: 'pointer',
-            transition: 'all 0.2s',
-            '&:hover': {
-              backgroundColor: 'primary.main',
+            borderRadius: "50%",
+            backgroundColor:
+              current === index ? "primary.main" : "background.paper",
+            cursor: "pointer",
+            transition: "all 0.2s",
+            "&:hover": {
+              backgroundColor: "primary.main",
             },
           }}
         />

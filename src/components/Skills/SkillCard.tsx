@@ -1,11 +1,6 @@
 import { Paper, Box, Typography, LinearProgress } from "@mui/material";
 import { motion } from "framer-motion";
-
-interface SkillCardProps {
-  icon: string;
-  name: string;
-  category: string;
-}
+import { SkillCardProps } from "./types";
 
 export const SkillCard = ({ icon, name, category }: SkillCardProps) => {
   return (
@@ -31,11 +26,28 @@ export const SkillCard = ({ icon, name, category }: SkillCardProps) => {
         <Typography variant="h4" component="span">
           {icon}
         </Typography>
-        <Typography variant="h6">{name}</Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {name}
+        </Typography>
       </Box>
       <Box sx={{ width: "100%" }}>
         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1 }}>
-          <Typography variant="body2" color="text.secondary">
+          <Typography
+            sx={{
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+            variant="body2"
+            color="text.secondary"
+          >
             {category}
           </Typography>
         </Box>
