@@ -1,6 +1,6 @@
-import { Projects } from "./types";
+import { ProjectsData } from "./types";
 
-export const projects: Projects[] = [
+export const projects: ProjectsData[] = [
   {
     title: "Batix",
     description:
