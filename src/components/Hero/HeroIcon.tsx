@@ -13,7 +13,7 @@ export const HeroIcon = () => {
         position: "relative",
         width: "300px",
         height: "300px",
-        display: "flex",
+        display: { xs: "none", md: "flex" },
         alignItems: "center",
         justifyContent: "center",
       }}

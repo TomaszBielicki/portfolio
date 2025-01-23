@@ -11,8 +11,8 @@ export const HeroButtons = () => {
       transition={{ duration: 0.8 }}
       sx={{
         flex: 1,
-        display: { xs: "none", md: "flex" },
-        justifyContent: "center",
+        display: { md: "flex" },
+        // justifyContent: { xs: "center", md: "left" },
       }}
     >
       <Box
