@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Portfolio is a personal website that showcases the work and skills as a Frontend Developer. The website is built with modern web technologies like React and Material UI to present various projects and contact information in a clean, easy-to-navigate layout.<br><br>Project is hosted on firebase. You can visit it live by : https://tb-portfolio-448710.web.app/</p>
+<p align="left">Portfolio is a personal website that showcases the work and skills as a Frontend Developer. The website is built with modern web technologies like React and Material UI to present various projects and contact information in a clean, easy-to-navigate layout.<br><br>Project is hosted on Firebase Hosting API. You can visit it live by : https://tb-portfolio-448710.web.app/</p>
 
 ###
 
