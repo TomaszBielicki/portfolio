@@ -1,7 +1,6 @@
-import React from 'react';
-import { Box } from '@mui/material';
-import { motion } from 'framer-motion';
-import { Code, Terminal, Laptop } from 'lucide-react';
+import { Box } from "@mui/material";
+import { motion } from "framer-motion";
+import { Code, Terminal, Laptop } from "lucide-react";
 
 export const HeroIcon = () => {
   return (
@@ -11,12 +10,12 @@ export const HeroIcon = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       sx={{
-        position: 'relative',
-        width: '300px',
-        height: '300px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        position: "relative",
+        width: "300px",
+        height: "300px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <Box
@@ -30,16 +29,16 @@ export const HeroIcon = () => {
           ease: "linear",
         }}
         sx={{
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          borderRadius: '50%',
-          border: '2px solid',
-          borderColor: 'primary.main',
-          borderTopColor: 'transparent',
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          borderRadius: "50%",
+          border: "2px solid",
+          borderColor: "primary.main",
+          borderTopColor: "transparent",
         }}
       />
-      <Box sx={{ position: 'relative', display: 'flex', gap: 2 }}>
+      <Box sx={{ position: "relative", display: "flex", gap: 2 }}>
         <motion.div
           animate={{
             y: [-10, 10],
